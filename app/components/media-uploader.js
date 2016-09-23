@@ -35,7 +35,8 @@ export default Component.extend({
 
     // Are we capturing a video?
     if (this.get('fileType') === "video") {
-      return navigator.device.capture.captureVideo(this.videoUpload, console.error, {limit: 1});
+      return navigator.device.capture.captureVideo(
+        this.videoUpload.bind(this), console.error, {limit: 1});
     }
 
     // If not video, get image from camera/photolibrary
