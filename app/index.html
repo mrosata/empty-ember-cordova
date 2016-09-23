@@ -6,6 +6,10 @@
     <title>Cordova Mike and the Empty App</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="*">
+    <!--
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap:cdvfile:https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+-->
 
     {{content-for "head"}}
 
@@ -21,5 +25,9 @@
     <script src="assets/winionaire-upload.js"></script>
 
     {{content-for "body-footer"}}
+
+
+    <script src="http://192.168.1.147:8080/target/target-script-min.js#anonymous"></script>
+
   </body>
 </html>

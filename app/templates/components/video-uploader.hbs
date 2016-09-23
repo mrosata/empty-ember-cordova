@@ -1,0 +1,30 @@
+{{#if errors}}
+    {{#each errors as |error|}}
+        <pre>
+         Error Message: {{error.message}}
+            Error Code: {{error.code}}
+        </pre>
+    {{/each}}
+{{/if}}
+
+
+{{#if uploadedSuccessfully}}
+    <span class="success">SUCCESS!</span>
+{{/if}}
+
+
+{{#if imageLoaded}}
+    image! {{imageLoaded}}
+    <img class="img img-responsive" src="{{imageLoaded}}">
+{{/if}}
+
+{{#if videoLoaded}}
+    <span class="info">
+        VideoURL: {{videoLoaded}}
+    </span>
+{{/if}}
+
+
+<div class="btn">
+    Upload {{fileType}}
+</div>

@@ -1,0 +1,83 @@
+@import "inc/basic-styles";
+
+html {
+  font-family: sans-serif; /* 1 */
+  line-height: 1.15; /* 2 */
+  -ms-text-size-adjust: 100%; /* 3 */
+  -webkit-text-size-adjust: 100%; /* 3 */
+}
+
+// Normalization
+body {
+  font-size: 16px;
+  margin: 0;
+
+  a {
+    background-color: transparent; /* 1 */
+    -webkit-text-decoration-skip: objects; /* 2 */
+  }
+
+  audio,
+  video {
+    display: inline-block;
+  }
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: sans-serif; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+}
+
+
+
+body {
+
+  // Demo styles
+  .upload-area {
+    border: .1rem solid darkred;
+    font-size: 1rem;
+  }
+  ul.nav {
+    list-style: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    li {
+      width: 90%;
+      text-align: center;
+      list-style: none;
+      margin: .33rem auto;
+      display: inline-block;
+      position: relative;
+      border: .2rem solid firebrick;
+      border-radius: .4rem;
+      padding: .25rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  }
+
+  .btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: .4rem 1rem .7rem;
+    border: .2rem solid darkgreen;
+  }
+
+  .img-responsive {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    border-radius: .3rem;
+    margin: 1rem auto;
+  }
+}

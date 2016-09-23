@@ -1,1 +1,17 @@
-{{outlet}}
+
+<div class="container-fluid">
+    <h1>Empty Application</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ul class="nav">
+            <li>{{#link-to "upload"}}Upload Page{{/link-to}}</li>
+            <li>{{#link-to "index"}}Index Page{{/link-to}}</li>
+        </ul>
+    </div>
+
+    <div class="row">
+        {{outlet}}
+    </div>
+</div>

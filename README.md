@@ -36,7 +36,8 @@ If so then run
 `ember cordova run android --device`
 On subsequent runs you won't have to rebuild the app because it will already be on your device (and since it's livereload in the webview there is nothing to rebuild in the actual native app)
 `ember cordova run android --device --no-build`
-
+To debug start up a weinre server, mine is on: [http://192.168.1.147:8080](http://192.168.1.147:8080) but yours might be different. You can change the link that is used in the app in the `app/index.html` file. Look for the weinre script tag.
+`weinre --boundHost=-all-`
 ### Code Generators
 
 Generators will help you to build templates for routes, models, components, ect.. try `ember help generate` for more details
