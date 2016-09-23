@@ -44,5 +44,8 @@
     "ember-uploader": "1.1.0",
     "ember-welcome-page": "^1.0.1",
     "loader.js": "^4.0.1"
+  },
+  "dependencies": {
+    "weinre": "^2.0.0-pre-I0Z7U9OV"
   }
 }
