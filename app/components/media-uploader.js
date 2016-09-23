@@ -150,6 +150,7 @@ export default Component.extend({
     console.log(error);
   },
 
+
   successHandler(serverResp) {
     if (!!serverResp.response) {
       try {
@@ -160,17 +161,6 @@ export default Component.extend({
     }
 
     console.log('Successful Upload!', serverResp);
-  },
-
-
-  /**
-   * This function is just to test that the video file we are trying to upload
-   * is in fact a video.
-   */
-  playRecordedVideo() {
-    if (this.get('videoLoaded')) {
-      VideoPlayer.play(this.get('videoLoaded'));
-    }
   }
 
 });

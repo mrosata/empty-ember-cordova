@@ -6,8 +6,7 @@
     "FileTransfer",
     "FileUploadOptions",
     "Camera",
-    "resolveLocalFileSystemURL",
-    "VideoPlayer"
+    "resolveLocalFileSystemURL"
   ],
   "browser": true,
   "boss": true,

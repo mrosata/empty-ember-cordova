@@ -8,11 +8,6 @@
 {{/if}}
 
 
-{{#if uploadedSuccessfully}}
-    <span class="success">SUCCESS!</span>
-{{/if}}
-
-
 {{#if imageLoaded}}
     image! {{imageLoaded}}
     <img class="img img-responsive" src="{{imageLoaded}}">
@@ -22,11 +17,11 @@
     <span class="info">
         VideoURL: {{videoLoaded}}
     </span>
-
-    <button {{action playRecordedVideo}} class="video btn"> PLAY VIDEO </button>
 {{/if}}
 
 
 <div class="btn upload">
     Upload {{fileType}}
 </div>
+
+<hr>
