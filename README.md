@@ -51,3 +51,17 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+
+
+### Notes to you from me
+
+```sh
+$ ember cordova:platform add android --save
+$ ember cdv:platform add browser --save
+$ ember cdv:plugin add cordova-plugin-file --save
+$ ember cdv:plugin add cordova-plugin-file-transfer --save
+$ ember cdv:plugin add cordova-camera --save
+$ ember cdv plugin add cordova-plugin-whitelist --save
+$ ember cdv:plugin add cordova-plugin-splashscreen --save
+$ ember install ember-cordova-keyboard --save
+```
