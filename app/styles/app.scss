@@ -71,6 +71,11 @@ body {
     text-align: center;
     padding: .4rem 1rem .7rem;
     border: .2rem solid darkgreen;
+
+    &.video {
+      margin: 1rem;
+      display: inline-block;
+    }
   }
 
   .img-responsive {

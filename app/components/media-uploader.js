@@ -27,7 +27,7 @@ export default Component.extend({
   click(evt) {
     this._super(...arguments);
 
-    if (!evt || !evt.target || !this.$(evt.target).hasClass('btn')) {
+    if (!evt || !evt.target || !this.$(evt.target).hasClass('upload')) {
       // The component was clicked (but not the button part).
       return evt;
     }
@@ -70,6 +70,7 @@ export default Component.extend({
       throw "No Recording!";
     }
     const theVideo = mediaFiles[0];
+
     const uploadOpts = {
       fileName: theVideo.name,
       mimeType: theVideo.type
@@ -159,6 +160,17 @@ export default Component.extend({
     }
 
     console.log('Successful Upload!', serverResp);
+  },
+
+
+  /**
+   * This function is just to test that the video file we are trying to upload
+   * is in fact a video.
+   */
+  playRecordedVideo() {
+    if (this.get('videoLoaded')) {
+      VideoPlayer.play(this.get('videoLoaded'));
+    }
   }
 
 });
